@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Class selector */
+        .red{
+            background-color: red;
+        }
+
+        /* ID selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child selector = It only applies when child is directly under parent element  */
+        div > p{
+            color: thistle;
+            background-color: aquamarine;
+        }
+
+        /* Desendent selector = It applies even when child is not directly under parent element */
+        div p{
+            color: thistle;
+            background-color: aquamarine;
+        }
+
+        /* univarsal selctor */
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* pseudo selector */
+
+        /* 1. when visited */
+        a:visited{
+            color: red;
+        }
+
+        /* 2. when not visited */
+        a:link{
+            color: blueviolet;
+        }
+
+        /* 3. when link is clicked */
+        a:active{
+            background-color: rgb(237, 196, 11);
+        }
+
+        /* 4. when you hover  */
+        a:hover{
+            background-color: black;
+        }
+
+        /* A child of anytype but first i target  */
+
+        p:first-child{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <p>I am 1st child</p>
+            <p>I am 2nd child</p>
+        </article>
+    </main>
+
+    <div class="red">I am a div</div>
+    <div id="green">I am another div</div>
+    <div>
+        <p>I am a para inside div using child selector</p>
+    </div>
+
+    <div>
+        <article>
+            <p>i am para using desendent selcetor</p>
+        </article>
+    </div>
+
+    <a href="www.something1" >something1</a>
+    <a href="www.something2">something2</a>
+    <a href="www.something3">something3</a>
+    <a href="www.something4">something4</a>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .size1 {
+            box-sizing: border-box;
+            border: 2px solid red;
+            background-color: aqua;
+            width: 80vw;
+            /* margin: auto; */
+            margin: 23px auto;
+            height: 10vh;
+        }
+
+        .size2 {
+            box-sizing: border-box;
+            border: 2px solid red;
+            background-color: aqua;
+            width: 60vw;
+            /* margin: auto; */
+            margin: 23px auto;
+            height: 80vh;
+            font-size: 18px;
+        }
+        .size2 p{
+            /* em will multiple n by inherited value */
+            font-size: 2em;
+        }
+
+        .size1 p{
+            /* em will multiple n by root i.e html */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="size1">
+        <p>Hi i am nirmit</p>
+    </div>
+    <div class="size2">
+        <p>Hi i am not nirmit</p>
+    </div>
+
+</body>
+
+</html>
