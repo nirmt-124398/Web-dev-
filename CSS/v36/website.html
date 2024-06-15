@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Layout</title>
     <style>
         * {
             margin: 0px;
             padding: 0px;
+
         }
 
         :root {
@@ -19,7 +20,7 @@
             position: sticky;
             background-color: #012E40;
             height: 10vh;
-            ;
+            top: 0px;
         }
 
         nav ul {
@@ -60,6 +61,44 @@
         .box:first-child {
             margin-top: 10px;
         }
+
+        .container2 {
+            height: 50vh;
+            background-color: #03A696;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .para {
+            border: 4px solid black;
+            border-radius: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 60px;
+            font-weight: bolder;
+            padding: 100px 200px;
+            color: var(--text);
+        }
+
+        .foot {
+            height: 15vh;
+            background-color: #012E40;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            height: 80px;
+            width: 80px;
+            position: fixed;
+            bottom: 29px;
+            right: 20px;
+
+        }
     </style>
 </head>
 
@@ -77,6 +116,16 @@
         <div class="box"></div>
         <div class="box"></div>
     </div>
+
+    <div class="container2">
+        <p class="para">Welcome to my website</p>
+    </div>
+
+    <footer class="foot">
+        <p>Terms and Condition | &copy;Copyrigth | Nirmit Rampal</p>
+    </footer>
+
+    <img src="—Pngtree—colorfull circle logo template_4309327.png" alt="">
 </body>
 
 </html>
