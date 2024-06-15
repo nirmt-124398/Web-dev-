@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+</head>
+<style>
+    .box:first-child {
+        color: red;
+
+    }
+
+    .box::first-line {
+        background-color: yellow;
+    }
+
+    .boxes * {
+        border: 2px solid black;
+    }
+
+    .box::first-letter{
+        font-size: 35px;
+    }
+
+    ::selection{
+        color: aqua;
+        background-color: black;
+    }
+
+    .box:nth-last-child(1){
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .boxes::before{
+        content: "Nirmit";
+    }
+
+    .boxes::after{
+        content: "Rampal";
+    }
+</style>
+
+<body>
+    <div class="boxes">
+        <div class="box">Hey i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aspernatur in
+            veritatis maxime distinctio quo facere. Consequatur ea architecto nihil assumenda, inventore, laboriosam eos
+            ut veniam odit sapiente blanditiis corrupti dolore facere culpa saepe ipsum hic fugit voluptatum quis
+            necessitatibus. Laborum laboriosam rerum, consequuntur aliquid nihil a maxime, inventore cupiditate dicta,
+            veniam atque quibusdam. Eos.</div>
+        <div class="box">Hey i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem libero
+            consequatur ipsum sit, officiis nesciunt saepe est unde perspiciatis quibusdam tempora earum vero vitae
+            aperiam magni nisi dolore. Eveniet, suscipit similique repudiandae qui, maiores quibusdam labore sed
+            repellat magni, sapiente cum enim quis. Eligendi quidem eius nesciunt culpa, ut officiis harum quod minus
+            illo velit.</div>
+        <div class="box">Hey i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique
+            vitae architecto molestiae nesciunt aperiam distinctio unde voluptas sed, nobis ratione tempore, eos ab, at
+            expedita perspiciatis quas aliquid quibusdam optio debitis natus. Error, suscipit unde possimus libero neque
+            vitae, fugit porro id dignissimos deserunt aut nostrum sint dolore, omnis molestias doloribus eum numquam
+            voluptatum?
+        </div>
+    </div>
+</body>
+
+</html>

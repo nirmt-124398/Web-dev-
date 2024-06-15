@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --text: #F28705;
+        }
+
+        nav {
+            position: sticky;
+            background-color: #012E40;
+            height: 10vh;
+            ;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 20px;
+
+        }
+
+        nav ul li a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .container {
+            height: 90vh;
+            background-color: #025159;
+            display: flex;
+            /* Make the container a flex container */
+            justify-content: center;
+            /* Horizontally center the content */
+            align-items: center;
+            /* Vertically center the content */
+        }
+
+
+        .box {
+            height: 200px;
+            width: 200px;
+            float: left;
+            background-color: #038C8C;
+            margin: 10px;
+        }
+
+        .box:first-child {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Sales</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
