@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 70vh;
+            width: 50vw;
+            background-color: rgb(100, 13, 100);
+        }
+
+        .box{
+            height: 7vh;
+            width: 5vw;
+            background-color: aquamarine;
+            /* animation-name: nirmit;
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(0.38, 0.01, 0, 0.79);
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+            animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; It pauses or runnig state */
+            /* animation-fill-mode: ; */
+         /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: nirmit 3s cubic-bezier(0.38, 0.01, 0, 0.79) 1s infinite both
+                      ,nirmit2 3s ease 1s infinite both ;
+        
+        }
+
+        @keyframes nirmit {
+            from{
+
+            }
+            to{
+                transform: translate(1000px) scale(5);
+                background-color: brown;
+            }
+            
+        }
+
+        @keyframes nirmit2 {
+            0%{
+                transform: rotate(50deg);
+            }
+            20%{
+                
+                transform: rotate(100deg);
+            }
+            40%{
+                
+                transform: rotate(200deg);
+            }
+            60%{
+                transform: rotate(240deg);
+
+            }
+            80%{
+                transform: rotate(270deg);
+
+            }
+            100%{
+                transform: rotate(300deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>
