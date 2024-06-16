@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid's</title>
+    <style>
+        .conatianer {
+            height: auto;
+            width: auto;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [c1]200px [c2]100px [c3];
+            grid-template-rows: [r1]100px [r2]150px [r3]200px [r4];
+        }
+
+        .item {
+            height: 55px;
+            width: 55px;
+            border: 2px solid red;
+        }
+
+        .item4{
+            grid-row: r2/r3;
+            /* grid-column: 1/2; */
+        }
+
+        .item5{
+            /* grid-column: 2/2; This is shorthand of */ 
+            grid-column-start: c1;
+            grid-column-end: c3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatianer">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+
+</html>

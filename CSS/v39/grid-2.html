@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid's</title>
+    <style>
+        .contianer {
+           
+            border: 2px solid black;
+            display: grid;
+            /* NOTE - Allways give all columns otherwise uotput will be mess. */
+            grid-template-areas: "nav nav nav nav"
+                                 "main main aside aside"
+                                 "footer footer footer footer";
+        }
+
+        .item {
+            height: 55px;
+            /* width: 55px; */
+            border: 2px solid red;
+        }
+
+        .item1{
+            grid-area: nav;
+            background-color: yellow;
+        }
+
+        .item2{
+            grid-area: main;
+            background-color: blueviolet;
+        }
+
+        .item3{
+         grid-area: aside;
+         background-color: peru;
+        }
+
+        .item4{
+         grid-area: footer;
+         background-color: thistle;
+        }
+        .item5{
+            /* Overlaps item1 */
+            grid-area: nav;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contianer">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+
+</html>

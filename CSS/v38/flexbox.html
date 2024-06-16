@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .container{
+        height: 50vh;
+        border: 3px solid red;
+        display: flex;
+        /* justify-content: center; */
+        /* Used for one line content */
+        /* align-items: center; */
+        /* align-content: center; */
+        /* flex-direction: row; */
+        /* flex-wrap:  wrap; */
+        /* flex-flow: row wrap; */
+        /* gap: 7px; */
+        /* row-gap: 10px;
+        column-gap: 5px; */
+        gap: 40px 10px;
+    }
+    .box{
+        height: 70px;
+        width: 70px;
+        background-color: purple;
+        /* margin: 5px; */
+
+        
+    }
+    /* ORDER */
+    /* Hihger the order latter the number will come. */
+
+.o1{
+    order: 10;
+}
+.o2{
+    order: 9;
+}
+.o3{
+    order: 8;
+}
+
+.box2{
+    flex-grow: 1;
+}
+
+.g1{
+    flex-grow: 2;
+}
+.s2{
+    flex-shrink: 10;
+}
+
+.alself{
+    align-self: center;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box o2">3</div>
+        <div class="box o3">4</div>
+        <div class="box o1">5</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">19</div>
+        <div class="box">20</div>
+    </div>
+
+    <div class="container">
+        <div class="box box2">1</div>
+        <div class="box box2 g1">2</div>
+        <div class="box box2 alself">3</div>
+        <div class="box box2">4</div>
+        <div class="box box2 s2">5</div>
+        <div class="box box2">6</div>
+    </div>
+</body>
+</html>
