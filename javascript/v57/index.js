@@ -11,7 +11,7 @@ let b = 10;
 
 let i = 0;
 while (a < b) {
-    console.log(i = 1)
+    console.log(i + 1)
     i++
 
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 3px solid red;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>URN</th>
+        </tr>
+        <tr>
+            <td>Nirmit</td>
+            <td>0987</td>
+        </tr>
+    </table>
+    <script>
+        console.log("hello World...")
+    </script>
+
+</body>
+<!-- 
+// Get the child nodes of the body element
+document.body.childNodes;
+// Result: NodeList(5) [text, div.container, text, script, text]
+
+let cont = document.body.childNodes;
+cont;
+// Result: NodeList(5) [text, div.container, text, script, text]
+
+// Attempt to access a non-existent property, which results in an error
+document.body.childElementCountNodes;
+// Result: undefined
+
+document.body.childElementCountNodes[1];
+// Error: Uncaught TypeError: Cannot read properties of undefined (reading '1')
+
+// Correctly access the first child element of the body
+document.body.childNodes[1];
+// Result: <div class="container">...</div>
+
+document.body.childNodes[1].childNodes;
+// Result: NodeList(11) [text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]
+
+document.body.childNodes[1].childNodes[1];
+// Result: <div class="box">box1</div>
+
+// Change the color of the first box
+document.body.childNodes[1].childNodes[1].style.color = "white";
+// Result: 'white'
+
+document.body.childNodes[1].childNodes[1].style.color = "purple";
+// Result: 'purple'
+
+// Access the first and last child elements within the container
+document.body.childNodes[1].firstElementChild;
+// Result: <div class="box" style="color: purple;">box1</div>
+
+document.body.childNodes[1].lastElementChild;
+// Result: <div class="box">box5</div>
+
+// Attempt to access the child nodes of the first child of the body, which doesn't exist
+document.body.firstChild.childNodes;
+// Result: NodeList [] (empty NodeList)
+
+// Access the children of the first element child of the body
+document.body.firstElementChild.children;
+// Result: HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+
+document.body.firstElementChild.children[0];
+// Result: <div class="box" style="color: purple;">box1</div>
+
+document.body.firstElementChild.children[1];
+// Result: <div class="box">box2</div>
+
+document.body.firstElementChild.children[2];
+// Result: <div class="box">box3</div>
+
+// Attempt to access a non-existent property, which results in undefined
+document.body.firstElementChild.children[2].ne;
+// Result: undefined
+
+// Access the next and previous sibling elements, as well as the parent element
+document.body.firstElementChild.children[2].nextElementSibling;
+// Result: <div class="box">box4</div>
+
+document.body.firstElementChild.children[2].previousElementSibling;
+// Result: <div class="box">box2</div>
+
+document.body.firstElementChild.children[2].parentElement;
+// Result: <div class="container">...</div>
+
+-->
+
+</html>
