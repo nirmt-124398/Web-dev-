@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        class stat{
+            static count(){
+                let p=0;
+                alert(p)
+                p++;
+            }
+        }
+        class animal {
+            constructor(name) {
+                this.name = name;
+            }
+
+            eats() {
+                console.log("Khounga")
+            }
+
+            jumps() {
+                console.log("Koodunga");
+            }
+        }
+
+        class lion extends animal {
+            constructor(name) {
+                super();
+                this.name = name;
+            }
+
+            eats() { // overriden
+                super.eats();
+                console.log("Khounga 2")
+            }
+        }
+
+        let a=new animal("Animal")
+        console.log(a);
+
+        let l=new lion("Lion")
+        console.log(l);
+        l.name="Shera"
+        console.log(l);
+        l.eats();
+
+        let s=new stat()
+        stat.count();
+
+    </script>
+</body>
+
+</html>
