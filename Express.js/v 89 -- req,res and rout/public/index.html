@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing POST</title>
+</head>
+<body>
+    <script>
+        async function toPOST() {
+            let vl = await fetch("/" ,{module: "POST"});
+            let gh= await vl.text()
+            console.log(gh);
+        }
+        toPOST()
+    </script>
+</body>
+</html>
